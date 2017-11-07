@@ -1,0 +1,68 @@
+@import "~normalize.css/normalize.css";
+@import '~bootstrap/dist/css/bootstrap.css';
+@import "mixins.scss";
+
+body, html, #app, #main-content {
+    height: 100%;
+}
+
+#main-content {
+    font-family: 'Open Sans', sans-serif;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+    
+    & > section > h2 {
+        margin: 80px 0 40px 0;
+        border-bottom: 1px solid rgb(236, 240, 241);
+    }
+}
+
+.parallax { 
+    height: 100%;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    @include filter(brightness(90%));
+    border-bottom: 1px solid rgb(236, 240, 241);
+}
+
+.navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+.image-block {
+    border: 3px solid white ;
+    background-color: black;
+    padding: 0px;    
+    margin: 0px;
+    height:300px;
+    text-align: center;
+    vertical-align: bottom;
+    background-size: contain;
+
+    & > a > p {
+        width: 100%;
+        height: 100%;
+        font-weight: normal;
+        font-size: 19px;
+        padding-top: 150px;
+        background-color: rgba(3,3,3,0.0);
+        color: rgba(6,6,6,0.0);
+    }
+
+    &:hover > a > p {
+        background-color: rgba(3,3,3,0.5);    
+        color: white;    
+    }
+}
+
+.wrap-content {
+    max-width: 95%;
+    margin: 0 auto;
+}

@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Simple website with materials from the Azure introduction presentation",
   "main": "index.html",
-  "scripts": {},
+  "scripts": {
+    "build": "webpack -p",
+    "start": "webpack-dev-server --inline --hot --progress --colors"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/needcash/to-the-cloud-materials.git"
@@ -39,6 +42,8 @@
     "webpack-dev-server": "^2.7.1"
   },
   "dependencies": {
-    "normalize.css": "^7.0.0"
+    "bootstrap": "^3.3.7",
+    "normalize.css": "^7.0.0",
+    "reactstrap": "^5.0.0-alpha.3"
   }
 }
