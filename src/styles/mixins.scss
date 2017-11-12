@@ -3,4 +3,9 @@
 	   -moz-filter: $value;
 		-ms-filters: $value;
 		filter: $value;
-  }
+	}
+
+@mixin transition($property, $value) {
+	-webkit-transition: $property $value;
+	transition: $property $value;
+}

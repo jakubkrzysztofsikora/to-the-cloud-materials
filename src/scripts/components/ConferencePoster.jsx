@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollDownButton from './ScrollDownButton';
 
 export default class ConferencePoster extends React.Component {
     render() {
@@ -6,6 +7,9 @@ export default class ConferencePoster extends React.Component {
             backgroundImage: "url(" + this.props.image + ")"
         }
 
-        return <section id="conference-poster" className="parallax" style={posterStyle} />
-    }
+		return <section id="conference-poster" className="parallax" style={posterStyle}>
+			{this.props.children}
+			<ScrollDownButton elementName={this.props.scrollToElementName} />
+		</section>;
+	}
 }

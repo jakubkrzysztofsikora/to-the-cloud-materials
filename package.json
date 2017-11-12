@@ -44,6 +44,8 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "normalize.css": "^7.0.0",
+    "react-fontawesome": "^1.6.1",
+    "react-scroll": "^1.6.4",
     "reactstrap": "^5.0.0-alpha.3"
   }
 }

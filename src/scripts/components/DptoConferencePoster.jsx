@@ -4,6 +4,8 @@ import DptoPoster from '../../images/dpto-poster.png';
 
 export default class DptoConferencePoster extends React.Component {
     render() {
-        return <ConferencePoster image={DptoPoster} />
-    }
+		return <ConferencePoster image={DptoPoster} scrollToElementName={this.props.scrollToElementName}>
+			<div className="dpto-dots" />
+		</ConferencePoster>
+	}
 }
