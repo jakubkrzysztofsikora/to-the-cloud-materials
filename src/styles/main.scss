@@ -2,6 +2,7 @@
 @import '~bootstrap/dist/css/bootstrap.css';
 @import "font-awesome/font-awesome.scss";
 @import "mixins.scss";
+@import "fonts.scss";
 
 $poster-slogan-width: 200px;
 
@@ -21,6 +22,10 @@ body, html, #app, #main-content {
         margin: 80px 0 40px 0;
 		border-bottom: 1px solid rgb(236, 240, 241);
 		padding-bottom: 10px;
+	}
+
+	& h1, & h2, & h3 {
+		font-family: 'Roboto', sans-serif;
 	}
 }
 
@@ -106,6 +111,7 @@ body, html, #app, #main-content {
 	left: calc(50% - 20px);
 	color: #09c17e;
 	cursor: pointer;
+	font-family: 'Roboto', sans-serif;
 
 	& > span {
 		position: absolute;
@@ -153,4 +159,14 @@ body, html, #app, #main-content {
 	  transform: rotateY(720deg) rotateZ(-45deg) translate(-20px, 20px);
 	  opacity: 0;
 	}
-  }
+}
+
+.thumbnail {
+	img {
+		width: 100%;
+	}
+
+	p {
+		text-align: center;
+	}
+}
