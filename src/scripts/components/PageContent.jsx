@@ -7,7 +7,7 @@ import GithubImg from '../../images/github-logo.png';
 
 export default class PageContent extends React.Component {
     render() {
-        return <section className="wrap-content">
+        return <section className="wrap-content row">
             <h2>Materiały dodatkowe</h2>
             <ImageBlock bootstrapClass="col-sm-2" image={AzureImg} backgroundColor="#0071c5" imageLink="#" imageInfo="Microsoft Azure Portal" />
             <ImageBlock bootstrapClass="col-sm-2" image={VisualStudioLogo} backgroundColor="#69207a" imageLink="#" imageInfo="Visual Studio Dev Essentials" />

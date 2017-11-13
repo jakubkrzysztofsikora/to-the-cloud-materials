@@ -3,6 +3,7 @@ import Header from './Header';
 import DptoConferencePoster from './DptoConferencePoster';
 import Thanks from './Thanks';
 import PageContent from './PageContent';
+import Footer from './Footer';
 
 export default class Website extends React.Component {
 	render() {
@@ -11,6 +12,7 @@ export default class Website extends React.Component {
 			<Header name="navbar" brand="Materiały dodatkowe" />
 			<Thanks />
 			<PageContent />
+			<Footer />
 		</section>;
 	}
 }
